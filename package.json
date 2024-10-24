@@ -1,9 +1,12 @@
 {
   "name": "01-subirreact",
   "private": true,
+  "homepage":"https://gringud.github.io/pruebaBorrar",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
